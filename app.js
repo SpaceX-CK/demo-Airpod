@@ -35,7 +35,7 @@ let delay = 0;
 
 scene.on("update", e =>{
     scrollpos = e.scrollPos /500;
-    console.log("🚀🌈 ~ file: app.js ~ line 29 ~ e", e)
+    // console.log("🚀🌈 ~ file: app.js ~ line 29 ~ e", e)
     
 })
 setInterval(()=>{
