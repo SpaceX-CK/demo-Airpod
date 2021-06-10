@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Apple Demo</title>
 
 
@@ -18,8 +18,32 @@
             Demo Airpod Pro</h1>
         <video src="/YouCut.mp4" id='video1' class="h-screen w-screen object-cover"></video>
     </div>
-    <section class="h-screen text-center text-6xl" style="padding-top: 300px;">
-        Comming Soon
+    <section class="h-screen text-center text-6xl justify-center flex items-center bg-gray-300"
+        style="padding-top: 300px;">
+
+        <div class="relative w-full h-full max-w-lg">
+
+            <div class="h-72 w-72 bg-green-500 opacity-60 rounded-full absolute -left-4 filter blur-xl moveGreen ">
+            </div>
+
+            <div class="h-72 w-72 bg-red-500 opacity-60 rounded-full absolute -right-4 filter blur-xl  moveRed"></div>
+            <div class="h-72 w-72 bg-blue-500 opacity-60 rounded-full absolute left-20 filter blur-xl  moveBlue"></div>
+
+            <div class="m-8 relative space-y-4">
+                <div class="p-5 bg-white rounded-lg flex item-center justify-between space-x-8">
+                    <div class="h-4 w-48 bg-gray-300 rounded animate-pulse"> </div>
+                    <div class="h-4 w-48 bg-red-300 rounded animate-pulse"> </div>
+                </div>
+                <div class="p-5 bg-white rounded-lg flex item-center justify-between space-x-8">
+                    <div class="h-4 w-36 bg-gray-300 rounded animate-pulse"> </div>
+                    <div class="h-4 w-56 bg-blue-300 rounded animate-pulse"> </div>
+                </div>
+                <div class="p-5 bg-white rounded-lg flex item-center justify-between space-x-8">
+                    <div class="h-4 w-48 bg-gray-300 rounded animate-pulse"> </div>
+                    <div class="h-4 w-48 bg-green-300 rounded animate-pulse"> </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
